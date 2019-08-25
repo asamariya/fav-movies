@@ -1,0 +1,18 @@
+// Place all the styles related to the movies controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+ul {
+  list-style: none;
+  padding: 0;
+  a {
+    text-decoration: none;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+
+.movie-img img {
+  display: inline-block;
+  width: 100px;
+}

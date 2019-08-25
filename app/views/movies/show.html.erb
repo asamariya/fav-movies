@@ -1,0 +1,16 @@
+<div class="container">
+  <div class="movie-title">
+  <h2><%= @movie.name %></h2>
+  </div>
+  <div class="movie-info row">
+    <div class="col-sm-4 movie-poster">
+      <img src="<%= @movie.poster_url %>" alt="<%= @movie.name %>" class="img-fluid">
+    </div>
+    <div class="col-sm-8 movie-details">
+      <h6>Director: <%= @movie.director.name %></h6>
+      <p><strong>Cast: </strong>Sofia Boutella, Romain Guillermic, Souheila Yacoub, Kiddy Smile</p>
+      <p> <%= avg_rating_display(@movie) %></p>
+    </div>
+  </div>
+  <%= link_to 'Back to list', movies_path  %>
+</div> 

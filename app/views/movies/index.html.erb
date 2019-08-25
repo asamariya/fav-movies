@@ -1,0 +1,23 @@
+<div class="container">
+  <h1>Movies</h1>
+
+  <ul>
+    <% @movies.each do |movie| %>
+      <%= link_to movie do%>
+        <li>
+        <div class="d-flex">
+          <div class="movie-img mr-2">
+            <img src="<%= movie.poster_url %> " alt="">
+          </div>
+          <div class="info">
+            <h3><%= movie.name %></h3>
+            <h6><strong>Director: </strong> <%= movie.director.name %></h6>
+          </div>
+        </div>  
+        <hr>  
+        </li>
+      <% end %>      
+    <% end %>
+  </ul>
+</div>
+ 
